@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "antigravity-cli"
+version = "0.1.0"
+description = "Local-first AI coding agent CLI powered by Ollama"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+keywords = ["ai", "cli", "agent", "ollama", "coding"]
+
+dependencies = [
+    "rich>=13.7",
+    "prompt_toolkit>=3.0",
+    "httpx>=0.27",
+    "pyyaml>=6.0",
+    "click>=8.1",
+]
+
+[project.scripts]
+ag = "antigravity.cli:main"
+antigravity = "antigravity.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["antigravity*"]
+
+[tool.setuptools.package-data]
+antigravity = ["*.yaml", "*.md"]

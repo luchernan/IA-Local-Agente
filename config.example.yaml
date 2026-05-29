@@ -1,0 +1,41 @@
+# Antigravity CLI — Configuration
+# Copy this file to ~/.antigravity/config.yaml and adjust as needed.
+
+ollama:
+  # URL base del servidor Ollama (endpoint OpenAI-compatible)
+  host: "http://192.168.1.136:11434/v1"
+
+  # Modelo a usar. Debe estar disponible en el servidor Ollama.
+  model: "llama3.1:8b"
+
+  # Tamaño del contexto en tokens (ajusta según el modelo)
+  context_size: 8192
+
+  # Temperatura de generación (0.0 = determinístico, 1.0 = creativo)
+  temperature: 0.1
+
+  # Timeout en segundos para requests al servidor
+  timeout: 120
+
+agent:
+  # Máximo de iteraciones del tool loop por turno de usuario
+  max_tool_iterations: 10
+
+  # Pedir confirmación antes de ejecutar comandos potencialmente peligrosos
+  dangerous_commands_require_confirm: true
+
+  # Directorio donde se guardan las sesiones
+  session_save_path: "~/.antigravity/sessions"
+
+  # Número máximo de sesiones guardadas (las más antiguas se eliminan)
+  max_saved_sessions: 50
+
+display:
+  # Tema de syntax highlighting: monokai, dracula, github-dark, nord, etc.
+  theme: "monokai"
+
+  # Mostrar los detalles de las llamadas a herramientas
+  show_tool_calls: true
+
+  # Mostrar el razonamiento del modelo antes de la respuesta final
+  show_thinking: true
