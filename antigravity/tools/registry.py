@@ -12,8 +12,8 @@ import json
 from dataclasses import dataclass
 from typing import Any, Callable, Optional
 
-from antigravity.tools import shell, filesystem, navigator
-from antigravity.config import Config
+from agente.tools import shell, filesystem, navigator
+from agente.config import Config
 
 
 # ---------------------------------------------------------------------------

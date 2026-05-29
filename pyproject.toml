@@ -3,7 +3,7 @@ requires = ["setuptools>=45", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "antigravity-cli"
+name = "agente-cli"
 version = "0.1.0"
 description = "Local-first AI coding agent CLI powered by Ollama"
 readme = "README.md"
@@ -20,12 +20,12 @@ dependencies = [
 ]
 
 [project.scripts]
-ag = "antigravity.cli:main"
-antigravity = "antigravity.cli:main"
+ia = "agente.cli:main"
+agente = "agente.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["antigravity*"]
+include = ["agente*"]
 
 [tool.setuptools.package-data]
-antigravity = ["*.yaml", "*.md"]
+agente = ["*.yaml", "*.md"]

@@ -25,7 +25,7 @@ agent:
   dangerous_commands_require_confirm: true
 
   # Directorio donde se guardan las sesiones
-  session_save_path: "~/.antigravity/sessions"
+  session_save_path: "~/.agente/sessions"
 
   # Número máximo de sesiones guardadas (las más antiguas se eliminan)
   max_saved_sessions: 50

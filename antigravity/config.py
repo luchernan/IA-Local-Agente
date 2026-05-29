@@ -34,7 +34,7 @@ class OllamaConfig:
 class AgentConfig:
     max_tool_iterations: int = 10
     dangerous_commands_require_confirm: bool = True
-    session_save_path: str = "~/.antigravity/sessions"
+    session_save_path: str = "~/.agente/sessions"
     max_saved_sessions: int = 50
 
 
@@ -61,7 +61,7 @@ class Config:
 # ---------------------------------------------------------------------------
 
 _CONFIG_SEARCH_PATHS = [
-    Path("~/.antigravity/config.yaml").expanduser(),
+    Path("~/.agente/config.yaml").expanduser(),
     Path("./config.yaml"),
 ]
 

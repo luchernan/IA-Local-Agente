@@ -37,9 +37,9 @@ from rich.table import Table
 from rich.text import Text
 from rich.theme import Theme
 
-from antigravity import __version__
-from antigravity.config import load_config
-from antigravity.orchestrator import (
+from agente import __version__
+from agente.config import load_config
+from agente.orchestrator import (
     Orchestrator,
     TextTokenEvent,
     ToolStartEvent,
@@ -330,7 +330,7 @@ async def chat_loop(orchestrator: Orchestrator, config) -> None:
     """Main interactive chat loop."""
 
     # Setup prompt_toolkit session with history file
-    history_dir = Path("~/.antigravity").expanduser()
+    history_dir = Path("~/.agente").expanduser()
     history_dir.mkdir(parents=True, exist_ok=True)
     history_file = history_dir / "history.txt"
 

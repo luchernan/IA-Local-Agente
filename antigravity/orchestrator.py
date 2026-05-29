@@ -25,11 +25,11 @@ from datetime import datetime
 from pathlib import Path
 from typing import AsyncGenerator, AsyncIterator, Callable, Optional
 
-from antigravity.config import Config
-from antigravity.llm.client import OllamaClient
-from antigravity.llm.context import ContextManager
-from antigravity.tools.registry import ToolRegistry, ToolCall
-from antigravity.tools.navigator import Navigator
+from agente.config import Config
+from agente.llm.client import OllamaClient
+from agente.llm.context import ContextManager
+from agente.tools.registry import ToolRegistry, ToolCall
+from agente.tools.navigator import Navigator
 
 
 # ---------------------------------------------------------------------------

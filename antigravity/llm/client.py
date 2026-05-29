@@ -11,7 +11,7 @@ from typing import AsyncIterator
 
 import httpx
 
-from antigravity.config import Config
+from agente.config import Config
 
 
 # ---------------------------------------------------------------------------
